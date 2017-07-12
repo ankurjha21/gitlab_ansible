@@ -1,0 +1,10 @@
+---
+
+- name: install apache
+  yum: pkg={{ item }} state=present
+  with_items:
+   - ca-certificates
+   - wget
+   - openssh-server
+   - postfix
+   - curl
